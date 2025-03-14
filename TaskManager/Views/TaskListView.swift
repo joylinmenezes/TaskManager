@@ -2,7 +2,7 @@
 //  TaskListView.swift
 //  TaskManager
 //
-//  Created by Teknip INC on 11/03/2025.
+//  Created by joylinm on 11/03/2025.
 //
 
 import SwiftUI
@@ -35,6 +35,7 @@ struct TaskListView: View {
     @State private var recentlyDeletedTask: Task?
     @State private var showUndoSnackbar = false
     @State private var undoAction: (() -> Void)?
+    @State private var refreshID = UUID()
     
     
     enum TaskStatus: String, CaseIterable , Identifiable {

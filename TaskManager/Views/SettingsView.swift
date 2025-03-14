@@ -2,7 +2,7 @@
 //  SettingsView.swift
 //  TaskManager
 //
-//  Created by Teknip INC on 11/03/2025.
+//  Created by joylinm on 11/03/2025.
 //
 
 import SwiftUI

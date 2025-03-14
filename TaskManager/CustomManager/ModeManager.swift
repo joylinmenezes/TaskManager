@@ -2,7 +2,7 @@
 //  ModeManager.swift
 //  TaskManager
 //
-//  Created by Teknip INC on 12/03/2025.
+//  Created by joylinm on 12/03/2025.
 //
 
 import Foundation

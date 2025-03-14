@@ -2,7 +2,7 @@
 //  TaskRowView.swift
 //  TaskManager
 //
-//  Created by Teknip INC on 10/03/2025.
+//  Created by joylinm on 10/03/2025.
 //
 
 import SwiftUI
@@ -17,7 +17,6 @@ struct TaskRowView: View {
             VStack(alignment: .leading, spacing: 10) {
                 Text(task.title ?? "Untitled")
                     .font(.headline)
-                    .strikethrough(task.isCompleted, color: .gray)
                     .foregroundColor(task.isCompleted ? .gray : accentColorManager.accentColor)
                 Text(task.dueDate?.formatted() ?? "No Date")
                     .font(.subheadline)
@@ -32,7 +31,7 @@ struct TaskRowView: View {
                 .foregroundColor(task.priority == "High" ? .red : task.priority == "Medium" ? .yellow : .green)
         }
         .padding()
-        .background(Color.blue.opacity(0.1))
+        .background(task.isCompleted ? Color.gray.opacity(0.1) : Color.blue.opacity(0.1) )
         .cornerRadius(10)
         .shadow(radius: 5)
     }

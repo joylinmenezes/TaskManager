@@ -2,7 +2,7 @@
 //  TaskManagerUITestsLaunchTests.swift
 //  TaskManagerUITests
 //
-//  Created by Teknip INC on 10/03/2025.
+//  Created by joylinm on 10/03/2025.
 //
 
 import XCTest

@@ -2,7 +2,7 @@
 //  TaskDetailView.swift
 //  TaskManager
 //
-//  Created by Teknip INC on 10/03/2025.
+//  Created by joylinm on 10/03/2025.
 //
 
 import SwiftUI
@@ -87,7 +87,7 @@ struct TaskDetailView: View {
         withAnimation {
             viewContext.delete(task)
             do {
-                try viewContext.save()
+                PersistenceController.shared.saveContext()
                 dismiss() // Close the screen after deletion
             } catch {
                 print("Error deleting task: \(error.localizedDescription)")
@@ -99,10 +99,9 @@ struct TaskDetailView: View {
         withAnimation {
             task.status = "Completed"
             task.isCompleted.toggle()
-//            PersistenceController.shared.saveContext()
             dismiss()  //
             do {
-                try viewContext.save()
+                PersistenceController.shared.saveContext()
                 dismiss() // Close the screen after deletion
             } catch {
                 print("Error deleting task: \(error.localizedDescription)")

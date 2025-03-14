@@ -2,7 +2,7 @@
 //  AddTaskView.swift
 //  TaskManager
 //
-//  Created by Teknip INC on 10/03/2025.
+//  Created by joylinm on 10/03/2025.
 //
 
 import SwiftUI
@@ -25,7 +25,7 @@ struct AddTaskView: View {
         formatter.dateStyle = .medium
         return formatter.string(from: selectedDate)
     }
-
+    
     
     var body: some View {
         VStack {
@@ -109,17 +109,6 @@ struct AddTaskView: View {
                 print("Error deleting task: \(error.localizedDescription)")
             }
         }
-//        let newTask = Task(context: viewContext)
-//        newTask.id = UUID()
-//        newTask.title = title
-//        newTask.taskDescription = taskDescription
-//        newTask.dueDate = dueDate
-//        newTask.priority = priority
-//        newTask.status = "Pending"
-//        newTask.isCompleted = false
-//        
-//        PersistenceController.shared.saveContext()
-        
     }
 }
 
